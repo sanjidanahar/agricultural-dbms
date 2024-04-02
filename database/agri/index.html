@@ -5,32 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agri</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+       <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
+       <section>
         <nav id='menu'>
-            <ul>
-                <li><a href='http://'>Home</a></li>
-                <li><a class='dropdown-arrow' href='http://'>Products</a>
-                    <ul class='sub-menus'>
-                        <li><a href='http://'>Products 1</a></li>
-                        <li><a href='http://'>Products 2</a></li>
-                        <li><a href='http://'>Products 3</a></li>
-                        <li><a href='http://'>Products 4</a></li>
-                    </ul>
-                </li>
-                <li><a href='http://'>About</a></li>
-                <li><a href='http://'>Contact Us</a></li>
-                <li><a href='http://'>Menu Item</a></li>
-                <li><a href='http://'>Menu Item</a></li>
-                <button class="btnlogin-popup">Login</button>
-            </ul>
-        </nav>
+          <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+          <ul>
+            <li><a href='http://'>Home</a></li>
+            <li><a class='dropdown-arrow' href='http://'>Products</a>
+              <ul class='sub-menus'>
+                <li><a href='http://'>Products 1</a></li>
+                <li><a href='http://'>Products 2</a></li>
+                <li><a href='http://'>Products 3</a></li>
+                <li><a href='http://'>Products 4</a></li>
+              </ul>
+            </li>
+            <li><a href='http://'>About</a></li>
+            <li><a class='dropdown-arrow' href='http://'>Services</a>
+              <ul class='sub-menus'>
+                <li><a href='http://'>Services 1</a></li>
+                <li><a href='http://'>Services 2</a></li>
+                <li><a href='http://'>Services 3</a></li>
+              </ul>
+            </li>
+            <li><a href='http://'>Contact Us</a></li>
+            <button class="btnlogin-popup">Login</button>
+          </ul>
 
+          
+        </nav>
+       </section>
         <div class="wrapper">
             <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
             <form action="connection.php">
@@ -90,19 +97,31 @@
         
 
        
-        <section class="banner">
-            <div class="banner-area">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h2>Crop </h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus vitae tempora cum amet aliquam, ducimus a ea sint animi quos sed reiciendis veniam voluptates quis facilis? Eum, esse. Distinctio voluptates, libero maiores corrupti quo sint eos veniam repellat praesentium alias ut tempora sapiente debitis adipisci perspiciatis optio dolore! Aut, animi!</p>
-                    </div>
-                    <div class="col-md-6">
-                        <img src="bg.jpeg" alt="">
-                    </div>
-                </div>
+       <main>
+        <div class="carousel rounded-box">
+            <div class="carousel-item">
+              <img src="https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg" alt="Burger" />
+            </div> 
+            <div class="carousel-item">
+              <img src="https://daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg" alt="Burger" />
+            </div> 
+            <div class="carousel-item">
+              <img src="https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg" alt="Burger" />
+            </div> 
+            <div class="carousel-item">
+              <img src="https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg" alt="Burger" />
+            </div> 
+            <div class="carousel-item">
+              <img src="https://daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg" alt="Burger" />
+            </div> 
+            <div class="carousel-item">
+              <img src="https://daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg" alt="Burger" />
+            </div> 
+            <div class="carousel-item">
+              <img src="https://daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg" alt="Burger" />
             </div>
-        </section>
+          </div>
+       </main>
 
         <script src="script.js"></script>
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

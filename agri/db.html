@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agriculture Database Management</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>Agriculture Database Management</h2>
+    
+    <!-- Form to add a new crop -->
+    <h3>Add New Crop</h3>
+    <form action="add_crop.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="type">Type:</label>
+        <input type="text" id="type" name="type"><br><br>
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description" rows="4" cols="50"></textarea><br><br>
+        <label for="price">Price:</label>
+        <input type="number" id="price" name="price" step="0.01" min="0" required><br><br>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="0" required><br><br>
+        <input type="submit" value="Add Crop">
+    </form>
+
+    <hr>
+
+    <!-- Table to display existing crops -->
+    <h3>Existing Crops</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Table rows will be populated dynamically from PHP -->
+            <?php include 'display_crops.php'; ?>
+        </tbody>
+    </table>
+</body>
+</html>

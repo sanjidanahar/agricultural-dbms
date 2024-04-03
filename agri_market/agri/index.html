@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agricultural Market - Products</title>
+    <!-- Add your CSS stylesheets here -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Agricultural Market</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="products.php">Products</a></li>
+                    <li><a href="about.php">About</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="login.php">Login</a></li>
+                    <li><a href="register.php">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Welcome to Agricultural Market</h2>
+            <p>Find the freshest agricultural products from local farmers.</p>
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="container">
+            <h2>Featured Products</h2>
+            <div class="product-grid">
+                <!-- Product cards will be dynamically generated here -->
+                <!-- Example product card with link to product details -->
+                <div class="product-card">
+                    <h3>Fresh Tomatoes</h3>
+                    <p>Price: $2.99</p>
+                    <img src="images/tomatoes.jpg" alt="Fresh Tomatoes">
+                    <p>Locally grown, organic tomatoes.</p>
+                    <a href="product_details.php?id=1">View Details</a> <!-- Link to product_details.php with product ID -->
+                </div>
+                <!-- Repeat the above structure for other products -->
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <h3>Green Beans</h3>
+                    <p>Price: $1.49</p>
+                    <img src="images/green_beans.jpg" alt="Green Beans">
+                    <p>Crispy and fresh green beans.</p>
+                    <a href="product_details.php?id=2">View Details</a> <!-- Link to product_details.php with product ID -->
+                </div>
+                <!-- Repeat for other products (up to 20) -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Agricultural Market. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Add your JavaScript files here -->
+    <script src="scripts.js"></script>
+</body>
+</html>
